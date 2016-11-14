@@ -2,6 +2,10 @@ video = document.getElementById('studio');
 video.pause();
 video.currentTime = 0;
 
+// audio = document.getElementById('radioshow');
+// audio.pause();
+// audio.currentTime = 188;
+
 // Initialize your app
 var myApp = new Framework7({ modalTitle: 'BBC Radio+' });
 
@@ -49,7 +53,7 @@ window.applicationCache.addEventListener('progress', function() {
     percent = (count++ / 22) * 100;
     percentplus = parseInt(percent) + 5 -1.5;
     $$('.loading .inner').css('width',percentplus + '%');
-    console.log(percentplus);
+    // console.log(percentplus);
 }, false );
 
 // Callbacks to run specific code for specific pages, for example for About page:
@@ -275,7 +279,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 46,
+        start: 46.5,
         onStart: function( options ) {   
             myMessages.addMessage({
               text: "Well",
@@ -288,7 +292,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 47.5,
+        start: 48,
         onStart: function( options ) {   
             myMessages.addMessage({
               text: "I mean, it’s no surprise",
@@ -301,7 +305,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })    
 
     .code({
-        start: 49.5,
+        start: 49.8,
         onStart: function( options ) {   
             myMessages.addMessage({
               text: "I do hate it",
@@ -327,7 +331,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 54,
+        start: 53.5,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "I hate it",
@@ -366,7 +370,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })    
 
     .code({
-        start: 58.5,
+        start: 58.25,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "I detest it",
@@ -379,7 +383,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })    
 
     .code({
-        start: 60.5,
+        start: 59.7,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "I feel contempt for it",
@@ -405,7 +409,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 65,
+        start: 64.25,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "Everything about it",
@@ -418,7 +422,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 66.5,
+        start: 66,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "Rattles every one of my cages",
@@ -431,10 +435,10 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 70,
+        start: 69.2,
         onStart: function( options ) { 
             myMessages.addMessage({
-              text: "So what you have is a comedy with no jokes",
+              text: "So what you have is a comedy",
               type: 'received',
               avatar: 'img/dummy-mark.jpg'
             })
@@ -444,10 +448,23 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 73,
+        start: 70.3,
         onStart: function( options ) { 
             myMessages.addMessage({
-              text: "You have satire with no satire",
+              text: "With no jokes",
+              type: 'received',
+              avatar: 'img/dummy-mark.jpg'
+            })
+            myMessages.scrollMessages();
+            conversationStarted = true;
+          } 
+      })
+
+    .code({
+        start: 72.25,
+        onStart: function( options ) { 
+            myMessages.addMessage({
+              text: "You have satire",
               type: 'received',
               avatar: 'img/dummy-mark.jpg'
             })
@@ -457,7 +474,20 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 75,
+        start: 73.2,
+        onStart: function( options ) { 
+            myMessages.addMessage({
+              text: "With no satire",
+              type: 'received',
+              avatar: 'img/dummy-mark.jpg'
+            })
+            myMessages.scrollMessages();
+            conversationStarted = true;
+          }
+      })
+
+    .code({
+        start: 74.5,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "Essentially, it's just like the Generation Game",
@@ -496,7 +526,7 @@ myApp.onPageInit('kermodemayo', function (page) {
         })
 
     .code({
-        start: 80,
+        start: 79.5,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "Greed",
@@ -509,7 +539,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })  
 
     .code({
-        start: 80.5,
+        start: 80,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "Avarice",
@@ -522,7 +552,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 81.5,
+        start: 80.75,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "Vice",
@@ -535,7 +565,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 83,
+        start: 82.5,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "Just being wheeled in front of you and going",
@@ -561,7 +591,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 87,
+        start: 86,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "I wondered whether",
@@ -616,7 +646,20 @@ myApp.onPageInit('kermodemayo', function (page) {
         start: 94,
         onStart: function( options ) { 
             myMessages.addMessage({
-              text: "So unbelievably just",
+              text: "So unbelievably",
+              type: 'received',
+              avatar: 'img/dummy-mark.jpg'
+            })
+            myMessages.scrollMessages();
+            conversationStarted = true;
+          }
+      })
+
+    .code({
+        start: 97.75,
+        onStart: function( options ) { 
+            myMessages.addMessage({
+              text: "Just",
               type: 'received',
               avatar: 'img/dummy-mark.jpg'
             })
@@ -639,7 +682,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 100.5,
+        start: 99.85,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "And then you realise",
@@ -652,7 +695,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 101.5,
+        start: 100.5,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "No",
@@ -665,7 +708,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 102,
+        start: 101,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "There are no jokes.",
@@ -678,7 +721,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 104,
+        start: 103,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "It's not meant to be funny",
@@ -691,7 +734,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 107,
+        start: 106,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "It's meant to be good",
@@ -717,7 +760,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 111,
+        start: 110,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "You're meant to like this lifestyle",
@@ -730,7 +773,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })   
 
     .code({
-        start: 112,
+        start: 111,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "You're meant to want this stuff",
@@ -743,7 +786,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 113.5,
+        start: 112.5,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "You're meant to be seduced by it",
@@ -756,7 +799,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 117,
+        start: 116,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "Compared to this",
@@ -769,7 +812,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 118.7,
+        start: 118,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "<a href='#' class='satc'>Sex and the City 2</a> is a call to arms",
@@ -782,7 +825,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 124,
+        start: 123,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "For the dispossessed masses of the world to rise up",
@@ -795,7 +838,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 127.5,
+        start: 126.5,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "In terms of its gender politics",
@@ -808,7 +851,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 130,
+        start: 129,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "<a href='#' class='humancentipede'>Human Centipede</a> is more sensitive",
@@ -821,7 +864,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 133,
+        start: 132.5,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "It is a film",
@@ -834,7 +877,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })    
 
     .code({
-        start: 135,
+        start: 134,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "Which not only has nothing",
@@ -847,7 +890,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 137,
+        start: 136.5,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "Other than the syrupy",
@@ -860,7 +903,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 138.5,
+        start: 138.2,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "Corpulent",
@@ -873,7 +916,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 140,
+        start: 139,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "Foul display of",
@@ -886,7 +929,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 142,
+        start: 141,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "I mean the amount of shots of",
@@ -899,7 +942,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 142.5,
+        start: 142,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "Cars",
@@ -912,14 +955,14 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 142.7,
+        start: 142.2,
         onStart: function( options ) { 
             $$('.message-angry .message-text').addClass('tada animated');
           }
       })
 
     .code({
-        start: 143,
+        start: 142.7,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "And bumpers",
@@ -932,14 +975,14 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 143.2,
+        start: 142.9,
         onStart: function( options ) { 
             $$('.message-angry .message-text').addClass('tada animated');
           }  
       })
 
     .code({
-        start: 144,
+        start: 143.4,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "And cars",
@@ -952,14 +995,14 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 144.2,
+        start: 143.6,
         onStart: function( options ) { 
             $$('.message-angry .message-text').addClass('tada animated');
           }
       })
 
     .code({
-        start: 145,
+        start: 144.2,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "And bumpers",
@@ -972,14 +1015,14 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 145.2,
+        start: 144.4,
         onStart: function( options ) { 
             $$('.message-angry .message-text').addClass('tada animated');
           }
       })
 
     .code({
-        start: 145.7,
+        start: 144.8,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "And yachts",
@@ -992,14 +1035,14 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 145.9,
+        start: 145,
         onStart: function( options ) { 
             $$('.message-angry .message-text').addClass('tada animated');
           }
       })
 
     .code({
-        start: 146.5,
+        start: 145.2,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "And cars",
@@ -1012,14 +1055,14 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 146.7,
+        start: 145.4,
         onStart: function( options ) { 
             $$('.message-angry .message-text').addClass('tada animated');
           } 
       })
 
     .code({
-        start: 146.9,
+        start: 145.8,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "And bumpers!",
@@ -1032,14 +1075,14 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 147.1,
+        start: 146,
         onStart: function( options ) { 
             $$('.message-angry .message-text').addClass('tada animated');
           } 
       }) 
 
     .code({
-        start: 148.5,
+        start: 147.5,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "I would cross the road",
@@ -1052,7 +1095,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 151,
+        start: 149,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "Not to be in the same street as these people",
@@ -1065,7 +1108,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 153,
+        start: 152,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "But the movie wants to be with them",
@@ -1078,7 +1121,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 155,
+        start: 153,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "The movie is like some awful hanger-on",
@@ -1091,7 +1134,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 157.5,
+        start: 156,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "That has found its way into some hideous celebrity party",
@@ -1104,7 +1147,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 161,
+        start: 159,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "And can't believe it's there",
@@ -1117,7 +1160,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 163,
+        start: 161,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "And doesn't want to annoy anyone.",
@@ -1130,7 +1173,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 165,
+        start: 163.5,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "Then of course you get the parade of celebrity cameos",
@@ -1143,7 +1186,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 170,
+        start: 168,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "With people just lining up to have their faces in this",
@@ -1156,7 +1199,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 174,
+        start: 173,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "The notable one",
@@ -1169,7 +1212,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 174.5,
+        start: 173.5,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "Being ‘Marky' Mark Wahlberg himself",
@@ -1182,7 +1225,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 175.5,
+        start: 174.75,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "Who actually",
@@ -1195,7 +1238,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
           
     .code({
-        start: 177,
+        start: 175.5,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "I thought",
@@ -1208,7 +1251,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
             
     .code({
-        start: 178,
+        start: 176.5,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "Looked embarrassed to be there.",
@@ -1221,7 +1264,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 180.5,
+        start: 179.5,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "You've almost got this sense",
@@ -1234,7 +1277,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       }) 
 
     .code({
-        start: 181.5,
+        start: 180.5,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "That he's moved on",
@@ -1247,7 +1290,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 183,
+        start: 181.5,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "Even he realises",
@@ -1260,7 +1303,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 184.5,
+        start: 183.5,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "That this is not acceptable",
@@ -1273,7 +1316,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 185.5,
+        start: 185,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "I cannot remem-",
@@ -1286,7 +1329,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 187,
+        start: 185.5,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "And I’m serious about this",
@@ -1299,7 +1342,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 189,
+        start: 188,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "I hate this more than I hate <a href='#' class='satc'>Sex and the City 2</a>",
@@ -1312,7 +1355,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 192,
+        start: 191,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "And that's really going some",
@@ -1325,7 +1368,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 195,
+        start: 194,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "That’s kind of what I said when I called up the office",
@@ -1339,10 +1382,10 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 199,
+        start: 198,
         onStart: function( options ) { 
             myMessages.addMessage({
-              text: "Tell me you didn’t think the same",
+              text: "Now tell me you didn’t think the same",
               type: 'received',
               avatar: 'img/dummy-mark.jpg',
               name: 'Mark Kermode'
@@ -1353,7 +1396,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 201,
+        start: 200,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: " I hated it first! 😄",
@@ -1367,7 +1410,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 203,
+        start: 201.5,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "You hated it first?",
@@ -1381,7 +1424,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 204.5,
+        start: 203.5,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "He hated before I did",
@@ -1394,7 +1437,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 205.5,
+        start: 204.5,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "I hated it before you",
@@ -1408,7 +1451,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 207,
+        start: 205.5,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "Al Murray on Twitter has just said 'This is 5.9 on the KerRant scale'",
@@ -1421,7 +1464,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 210,
+        start: 209,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "<img src='img/tweet.png'>",
@@ -1434,7 +1477,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 211,
+        start: 210,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "Someone else has just called it 'An Entou-rage'",
@@ -1447,7 +1490,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 216,
+        start: 215,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "That’s very good 😆",
@@ -1461,7 +1504,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 218,
+        start: 217,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "Entou-rage is good",
@@ -1475,7 +1518,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 220,
+        start: 219,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "Worse than <a href='#' class='satc' style='color:#fff;'>Sex and the City 2</a>?",
@@ -1488,7 +1531,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 221.5,
+        start: 220.5,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "Yeah",
@@ -1502,7 +1545,7 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     .code({
-        start: 222,
+        start: 221,
         onStart: function( options ) { 
             myMessages.addMessage({
               text: "And I’m not kidding",

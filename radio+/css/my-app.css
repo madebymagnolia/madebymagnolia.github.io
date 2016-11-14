@@ -5,6 +5,10 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
+.back.link {
+  visibility: hidden;
+}
+
 .loading {
   border: 1px solid #fff;
   height: 30px;
