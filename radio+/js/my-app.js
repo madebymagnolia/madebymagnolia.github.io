@@ -24,6 +24,7 @@ window.applicationCache.addEventListener('cached', function() {
     // myApp.confirm('Caching complete.');
     console.log('Caching complete.');
     $$('.views').show();
+    $$('.loading').hide();
 }, false );
 
 window.applicationCache.addEventListener('noupdate', function() {
@@ -31,6 +32,7 @@ window.applicationCache.addEventListener('noupdate', function() {
     // myApp.confirm('No update required.');
     console.log('No update required.');
     $$('.views').show();
+    $$('.loading').hide();
 }, false );
 
 window.applicationCache.addEventListener('updateready', function() {
@@ -38,6 +40,16 @@ window.applicationCache.addEventListener('updateready', function() {
     // myApp.confirm('Updated.');
     console.log('Updated.');
     $$('.views').show();
+    $$('.loading').hide();
+}, false );
+
+var count = 0;
+
+window.applicationCache.addEventListener('progress', function() {
+    percent = (count++ / 22) * 100;
+    percentplus = parseInt(percent) + 5 -1.5;
+    $$('.loading .inner').css('width',percentplus + '%');
+    console.log(percentplus);
 }, false );
 
 // Callbacks to run specific code for specific pages, for example for About page:
@@ -254,7 +266,7 @@ myApp.onPageInit('kermodemayo', function (page) {
         start: 18.7,
         onStart: function( options ) {   
             myMessages.addMessage({
-              text: "<img src='img/entourage-clip-full.gif'>",
+              text: "<img src='img/entourage-clip-mini.gif'>",
               type: 'received',
             })
             setTimeout(function(){myMessages.scrollMessages();},10);

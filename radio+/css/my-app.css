@@ -5,6 +5,27 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
+.loading {
+  border: 1px solid #fff;
+  height: 30px;
+  position: absolute;
+  left: 48px;
+  right: 48px;
+  top: 330px;
+  z-index: 99999999;
+}
+
+.loading .inner {
+  background: #fff;
+  bottom: 2px;
+  left: 2px;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  transition: all 0.2s;
+  width: 0%;
+}
+
 .views {
   display: none;
 }
