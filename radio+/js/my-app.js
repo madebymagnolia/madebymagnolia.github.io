@@ -1,8 +1,8 @@
 video = document.getElementById('studio');
+audio = document.getElementById('radioshow');
+
 video.pause();
 video.currentTime = 0;
-
-// audio = document.getElementById('radioshow');
 // audio.pause();
 // audio.currentTime = 188;
 
@@ -50,7 +50,7 @@ window.applicationCache.addEventListener('updateready', function() {
 var count = 0;
 
 window.applicationCache.addEventListener('progress', function() {
-    percent = (count++ / 22) * 100;
+    percent = (count++ / 23) * 100;
     percentplus = parseInt(percent) + 5 -1.5;
     $$('.loading .inner').css('width',percentplus + '%');
     // console.log(percentplus);
@@ -1601,6 +1601,19 @@ myApp.onPageInit('kermodemayo', function (page) {
         ];
         var groups = [buttons1, buttons2];
         myApp.actions(groups);
+    });
+
+
+    $$('.toolbar-inner .play-toggle').on('click',function(){
+        $$('body').toggleClass('paused');
+        $$('.toolbar .play-toggle').toggleClass('paused');
+        if ($$('body').hasClass('paused')) {
+          video.pause();
+          audio.pause();
+        } else {
+          video.play();
+          audio.play();
+        }
     });
 
     $$('.toolbar-inner .video-toggle').on('click',function(){
