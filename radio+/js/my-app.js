@@ -3,8 +3,8 @@ audio = document.getElementById('radioshow');
 
 video.pause();
 video.currentTime = 0;
-audio.pause();
-audio.currentTime = 110;
+// audio.pause();
+// audio.currentTime = 110;
 
 // Initialize your app
 var myApp = new Framework7({ modalTitle: 'BBC Radio+' });
