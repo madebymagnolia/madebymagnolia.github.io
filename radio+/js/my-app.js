@@ -3,8 +3,8 @@ audio = document.getElementById('radioshow');
 
 video.pause();
 video.currentTime = 0;
-// audio.pause();
-// audio.currentTime = 188;
+audio.pause();
+audio.currentTime = 110;
 
 // Initialize your app
 var myApp = new Framework7({ modalTitle: 'BBC Radio+' });
@@ -1558,9 +1558,22 @@ myApp.onPageInit('kermodemayo', function (page) {
       })
 
     $$('.messages').on('click','.satc', function () {
+
+        if ($$('body').hasClass('paused')) {
+
+          $$('body').addClass('alreadypaused');
+
+        } else {
+
+          $$('body').addClass('paused');
+          video.pause();
+          audio.pause();
+
+        }
+
         var buttons1 = [
             {
-                text: "Mark's Review of Sex and the City 2",
+                text: "Mark reviews Sex and the City 2",
                 label: true
             },
             {
@@ -1573,7 +1586,22 @@ myApp.onPageInit('kermodemayo', function (page) {
         var buttons2 = [
             {
                 text: 'Cancel',
-                color: 'red'
+                color: 'red',
+                onClick: function () {
+
+                  if ($$('body').hasClass('alreadypaused')) {
+
+                    $$('body').removeClass('alreadypaused');
+
+                  } else {
+
+                    $$('body').removeClass('paused');
+                    video.play();
+                    audio.play();
+
+                  }
+
+                }
             },
         ];
         var groups = [buttons1, buttons2];
@@ -1581,9 +1609,22 @@ myApp.onPageInit('kermodemayo', function (page) {
     });
 
     $$('.messages').on('click','.humancentipede', function () {
+
+        if ($$('body').hasClass('paused')) {
+
+          $$('body').addClass('alreadypaused');
+
+        } else {
+
+          $$('body').addClass('paused');
+          video.pause();
+          audio.pause();
+
+        }
+
         var buttons1 = [
             {
-                text: "Mark's Review of Human Centipede",
+                text: "Mark reviews Human Centipede",
                 label: true
             },
             {
@@ -1596,7 +1637,22 @@ myApp.onPageInit('kermodemayo', function (page) {
         var buttons2 = [
             {
                 text: 'Cancel',
-                color: 'red'
+                color: 'red',
+                onClick: function () {
+
+                  if ($$('body').hasClass('alreadypaused')) {
+
+                    $$('body').removeClass('alreadypaused');
+
+                  } else {
+
+                    $$('body').removeClass('paused');
+                    video.play();
+                    audio.play();
+
+                  }
+
+                }
             },
         ];
         var groups = [buttons1, buttons2];
