@@ -1578,9 +1578,39 @@ myApp.onPageInit('kermodemayo', function (page) {
             },
             {
                 text: "Play review",
+                onClick: function () {
+
+                  if ($$('body').hasClass('alreadypaused')) {
+
+                    $$('body').removeClass('alreadypaused');
+
+                  } else {
+
+                    $$('body').removeClass('paused');
+                    video.play();
+                    audio.play();
+
+                  }
+
+                }
             },
             {
-                text: 'Save for later'
+                text: 'Save for later',
+                onClick: function () {
+
+                  if ($$('body').hasClass('alreadypaused')) {
+
+                    $$('body').removeClass('alreadypaused');
+
+                  } else {
+
+                    $$('body').removeClass('paused');
+                    video.play();
+                    audio.play();
+
+                  }
+
+                }
             },
         ];
         var buttons2 = [
@@ -1629,9 +1659,39 @@ myApp.onPageInit('kermodemayo', function (page) {
             },
             {
                 text: "Play review",
+                onClick: function () {
+
+                  if ($$('body').hasClass('alreadypaused')) {
+
+                    $$('body').removeClass('alreadypaused');
+
+                  } else {
+
+                    $$('body').removeClass('paused');
+                    video.play();
+                    audio.play();
+
+                  }
+
+                }
             },
             {
-                text: 'Save for later'
+                text: 'Save for later',
+                onClick: function () {
+
+                  if ($$('body').hasClass('alreadypaused')) {
+
+                    $$('body').removeClass('alreadypaused');
+
+                  } else {
+
+                    $$('body').removeClass('paused');
+                    video.play();
+                    audio.play();
+
+                  }
+
+                }
             },
         ];
         var buttons2 = [
