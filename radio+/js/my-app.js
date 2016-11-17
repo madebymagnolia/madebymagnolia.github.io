@@ -7,7 +7,10 @@ video.currentTime = 0;
 // audio.currentTime = 110;
 
 // Initialize your app
-var myApp = new Framework7({ modalTitle: 'BBC Radio+' });
+var myApp = new Framework7({ 
+  modalTitle: 'BBC Radio+',
+  swipeBackPage: false
+});
 
 // Export selectors engine
 var $$ = Dom7;
