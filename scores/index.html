@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fixtures, Scores & Results</title>
+    <link rel="stylesheet" href="./css/main.css">
+  </head>
+  <body class="state-nav">
+
+    <div class="tv">
+      <div class="container">
+        
+        <div class="screen screen-scores">
+          
+          <div class="pane pane-nav active">
+
+            <h2>Scores & Fixtures</h2>
+            
+            <div class="nav-mask">
+
+              <img src="img/top_grad.png" class="nav-mask-grad">
+
+              <ul class="nav">
+                <li>Thursday 19th</li>
+                <li>Yesterday</li>
+                <li class="focus">Today</li>
+                <li>Tomorrow</li>
+                <li>Monday 23rd</li>
+              </ul>
+
+            </div>
+
+
+          </div>
+
+          <div class="pane pane-content">
+
+            <img src="img/top_grad.png" class="pane-content-grad-top">
+            <img src="img/bottom_grad.png" class="pane-content-grad-bottom">
+
+            <div class="overlap-top"></div>
+            <div class="overlap-bottom"></div>
+
+            <div class="pane-content-page">
+              <h3>Europa League</h3><div class="europaleague"></div>
+            </div>
+
+            <div class="pane-content-page">
+              <h3>English Premier League</h3><div class="epl-friday"></div>
+              <h3>English Championship</h3><div class="championship-friday"></div>         
+            </div>
+
+            <div class="pane-content-page">
+              <h3>English Premier League</h3><div class="epl"></div>
+              <h3>English Championship</h3><div class="championship"></div>
+              <h3>English League One</h3><div class="leagueone"></div>              
+              <h3>English League Two</h3><div class="leaguetwo"></div>
+              <h3>English National League</h3><div class="nationalleague"></div>
+            </div>
+
+            <div class="pane-content-page">
+              <h3>English Premier League</h3><div class="epl-sunday"></div>
+              <h3>English Championship</h3><div class="championship-sunday"></div>
+              <h3>English League One</h3><div class="leagueone-sunday"></div>              
+              <h3>English League Two</h3><div class="leaguetwo-sunday"></div>
+              <h3>English National League</h3><div class="nationalleague-sunday"></div>
+            </div>
+
+            <div class="pane-content-page">
+              <h3>English Premier League</h3><div class="epl-monday"></div>
+            </div>
+
+            <div class="pane-content-scrollbar">
+              <div class="scrollbar-bar active">
+                <div class="scrollbar-handle"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="dimmer"></div>
+
+        </div>
+
+      </div>
+    </div>   
+
+  </body>
+
+  <script id="score" type="text/x-handlebars-template">
+    {{#each scores}}
+    <div class="score" data-status="{{status}}">
+      <div class="score-elapsed">{{elapsed}}</div>
+      <div class="score-title score-title-home">{{team-home}}</div>
+      <div class="score-title score-title-away">{{team-away}}</div>
+      <div class="score-scoreline">{{scoreline}}</div>
+      <div class="score-cta"></div>
+      <div class="score-bg"></div>
+      <div class="score-expansion">
+        <div class="score-scorers score-scorers-home">{{scorers-home}}</div>
+        <div class="score-elapsed-expanded">{{elapsed}}</div>
+        <div class="score-scorers score-scorers-away">{{scorers-away}}</div>
+      </div>
+    </div>
+    {{/each}}
+  </script>
+
+  <script src="./js/handlebars.js"></script>
+  <script src="vendor.min.js"></script>
+  <script src="./js/data.js"></script>
+  <script src="./js/main.js"></script>
+</html>
