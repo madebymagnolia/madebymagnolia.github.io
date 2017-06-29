@@ -1,3 +1,71 @@
+var europaleague = {
+
+	scores: [
+	  {
+	    "status": "result",
+	    "elapsed": "FT",
+	    "team-home": "Ajax",
+	    "team-away": "FC Schalke 04",
+	    "scoreline": "2 - 0",
+	    "scorers-home": "Klaassen (23', 42')",
+	    "scorers-away": ""
+	  },
+	  {
+	    "status": "result",
+	    "elapsed": "FT",
+	    "team-home": "Celta Vigo",
+	    "team-away": "KRC Genk",
+	    "scoreline": "3 - 1",
+	    "scorers-home": "Sisto (11'), Aspas (66'), Guidetti (89')",
+	    "scorers-away": "Boëtius (31'), Buffel (54')"
+	  },
+	  {
+	    "status": "result",
+	    "elapsed": "FT",
+	    "team-home": "Lyon",
+	    "team-away": "Besiktas",
+	    "scoreline": "2 - 1",
+	    "scorers-home": "Tolisso (83'), Morel (84')",
+	    "scorers-away": "Babel (15')"
+	  },
+	  {
+	    "status": "result",
+	    "elapsed": "FT",
+	    "team-home": "RSC Anderlecht",
+	    "team-away": "Napoli",
+	    "scoreline": "1 - 1",
+	    "scorers-home": "Dendoncker (32')",
+	    "scorers-away": "Hamsik (81')"
+	  }
+	]
+
+}
+
+var championship_friday = {
+
+	scores: [
+	  {
+	    "status": "result",
+	    "elapsed": "FT",
+	    "team-home": "Fulham",
+	    "team-away": "Reading",
+	    "scoreline": "1 - 0",
+	    "scorers-home": "Aluko (27')",
+	    "scorers-away": ""
+	  },
+	  {
+	    "status": "result",
+	    "elapsed": "FT",
+	    "team-home": "Bolton Wanderers",
+	    "team-away": "Aston Villa",
+	    "scoreline": "3 - 1",
+	    "scorers-home": "Spearing (7'), Clayton (61'), Madine (88')",
+	    "scorers-away": "Agbonlahor (66')"
+	  }
+	]
+
+};
+
 var epl = { 
 
 	scores : [
@@ -128,7 +196,7 @@ var championship = {
 	  {
 	    "status": "live",
 	    "elapsed": "32'",
-	    "team-home": "Sheffield Wednesday",
+	    "team-home": "Sheffield Weds",
 	    "team-away": "Cardiff City",
 	    "scoreline": "1 - 0",
 	    "scorers-home": "Forestieri (21')",
@@ -145,7 +213,7 @@ var championship = {
 	  },
 	  {
 	    "status": "fixture",
-	    "elapsed": "",
+	    "elapsed": "Venue: Molineux",
 	    "team-home": "Wolves",
 	    "team-away": "Leeds United",
 	    "scoreline": "17:15",
@@ -224,7 +292,7 @@ var leagueone = {
 	  },
 	  {
 	    "status": "fixture",
-	    "elapsed": "",
+	    "elapsed": "Venue: Spotland",
 	    "team-home": "Rochdale",
 	    "team-away": "Coventry City",
 	    "scoreline": "19:45",
@@ -392,3 +460,92 @@ var nationalleague = {
 	]
 
 };
+
+var epl_sunday = {
+
+	scores: [
+	  {
+	    "status": "fixture",
+	    "elapsed": "Venue: The Liberty Stadium",
+	    "team-home": "Swansea",
+	    "team-away": "Burnley",
+	    "scoreline": "16:00",
+	    "scorers-home": "",
+	    "scorers-away": ""
+	  }
+	]
+
+}
+
+var championship_sunday = {
+
+	scores: [
+	  {
+	    "status": "fixture",
+	    "elapsed": "Venue: DW Stadium",
+	    "team-home": "Wigan Athletic",
+	    "team-away": "Hull City",
+	    "scoreline": "14:00",
+	    "scorers-home": "",
+	    "scorers-away": ""
+	  }
+	]
+
+}
+
+var leagueone_sunday = {
+
+	scores: [
+	  {
+	    "status": "fixture",
+	    "elapsed": "Venue: Gigg Lane",
+	    "team-home": "Bury",
+	    "team-away": "MK Dons",
+	    "scoreline": "12:15",
+	    "scorers-home": "",
+	    "scorers-away": ""
+	  },
+	  {
+	    "status": "fixture",
+	    "elapsed": "Venue: Bescot Stadium",
+	    "team-home": "Walsall",
+	    "team-away": "Southend United",
+	    "scoreline": "14:00",
+	    "scorers-home": "",
+	    "scorers-away": ""
+	  }
+	]
+
+}
+
+var leaguetwo_sunday = {
+
+	scores: [
+	  {
+	    "status": "fixture",
+	    "elapsed": "Venue: Brisbane Road",
+	    "team-home": "Leyton Orient",
+	    "team-away": "Stevenage",
+	    "scoreline": "15:00",
+	    "scorers-home": "",
+	    "scorers-away": ""
+	  }
+	]
+
+}
+
+var epl_monday = {
+
+	scores: [
+	  {
+	    "status": "fixture",
+	    "elapsed": "Venue: Vicarage Road",
+	    "team-home": "Watford",
+	    "team-away": "Crystal Palace",
+	    "scoreline": "20:00",
+	    "scorers-home": "",
+	    "scorers-away": ""
+	  }
+	]
+
+}

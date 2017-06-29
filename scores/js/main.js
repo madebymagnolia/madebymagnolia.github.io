@@ -4,38 +4,47 @@ $(document).ready(function() {
 	var template = $('#score').html();
 	var templateScript = Handlebars.compile(template);
 
+	var scores_europaleague = templateScript(europaleague);
+	$('.europaleague').append(scores_europaleague);	
+
+	var scores_championship_friday = templateScript(championship_friday);
+	$('.championship-friday').append(scores_championship_friday);	
+
 	var scores_epl = templateScript(epl);
-	var scores_championship = templateScript(championship);
-	var scores_leagueone = templateScript(leagueone);
-	var scores_leaguetwo = templateScript(leaguetwo);
-	var scores_nationalleague = templateScript(nationalleague);
-	
 	$('.epl').append(scores_epl);
+
+	var scores_championship = templateScript(championship);
 	$('.championship').append(scores_championship);
+
+	var scores_leagueone = templateScript(leagueone);
 	$('.leagueone').append(scores_leagueone);
+
+	var scores_leaguetwo = templateScript(leaguetwo);
 	$('.leaguetwo').append(scores_leaguetwo);
+
+	var scores_nationalleague = templateScript(nationalleague);
 	$('.nationalleague').append(scores_nationalleague);
+
+	var scores_epl_sunday = templateScript(epl_sunday);
+	$('.epl-sunday').append(scores_epl_sunday);	
+
+	var scores_championship_sunday = templateScript(championship_sunday);
+	$('.championship-sunday').append(scores_championship_sunday);	
+
+	var scores_leagueone_sunday = templateScript(leagueone_sunday);
+	$('.leagueone-sunday').append(scores_leagueone_sunday);	
+
+	var scores_leaguetwo_sunday = templateScript(leaguetwo_sunday);
+	$('.leaguetwo-sunday').append(scores_leaguetwo_sunday);	
+
+	var scores_epl_monday = templateScript(epl_monday);
+	$('.epl-monday').append(scores_epl_monday);	
 
 	// Indexing
 	$('.pane-content-page').each(function(){
 		$(this).find('.score').each(function(i){
 			$(this).attr('data-index',i++);
 		});
-	});
-
-	// Height judgment
-	$('.score').each(function(){
-		
-		var scorerhome = $(this).find('.score-scorers-home').text();
-		var scoreraway = $(this).find('.score-scorers-away').text();
-		
-		// if (scorerhome != '' || scoreraway != '' ) {
-
-			var totalheight = $(this)[0].scrollHeight;
-			$(this).attr('data-height',totalheight);
-			$(this).find('.score-cta').show();
-
-		// }
 	});
 
 	// Nav shift
@@ -49,6 +58,27 @@ $(document).ready(function() {
 	}
 
 	navshift();
+
+	// Height judgment
+	function heightjudgment() {
+
+		$('.score').each(function(){
+			
+			var scorerhome = $(this).find('.score-scorers-home').text();
+			var scoreraway = $(this).find('.score-scorers-away').text();
+			
+			// if (scorerhome != '' || scoreraway != '' ) {
+
+				var totalheight = $(this)[0].scrollHeight;
+				$(this).attr('data-height',totalheight);
+				$(this).find('.score-cta').show();
+
+			// }
+		});
+
+	}
+
+	heightjudgment();
 
 	// Show page
 	var current = parseInt($('ul.nav li.focus').index());
@@ -248,15 +278,15 @@ $(document).ready(function() {
 			// Enter
 			if(e.keyCode == 13) {
 
-				if ($('.score.focus').hasClass('expanded')){
+				if ($('.pane-content-page:visible .score.focus').hasClass('expanded')){
 
-					$('.score.focus').css('height','50px').removeClass('expanded');
+					$('.pane-content-page:visible .score.focus').css('height','50px').removeClass('expanded');
 
 				} else {
 
-					var animheight = $('.score.focus').attr('data-height');
+					var animheight = $('.pane-content-page:visible .score.focus').attr('data-height');
 					// $('.score').css('height','50px').removeClass('expanded');
-					$('.score.focus').css('height',animheight).addClass('expanded');
+					$('.pane-content-page:visible .score.focus').css('height',animheight).addClass('expanded');
 
 				}
 
