@@ -190,8 +190,8 @@ var championship = {
 	    "team-home": "Rotherham United",
 	    "team-away": "Birmingham City",
 	    "scoreline": "0 - 1",
-	    "scorers-home": "Frei Koyunlu (30')",
-	    "scorers-away": ""
+	    "scorers-home": "",
+	    "scorers-away": "Frei Koyunlu (30')"
 	  },
 	  {
 	    "status": "live",

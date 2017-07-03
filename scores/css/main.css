@@ -564,7 +564,7 @@ h3 {
 }
 
 .focus .score-cta {
-  opacity: 1;
+  opacity: 0;
 }
 
 .expanded .score-cta {
@@ -661,7 +661,11 @@ h3 {
   height: 200px;
   position: absolute;
   top: 0px;
+  transition: top 0.2s;
   width: 8px;
+  background: #818181;
+  left: -3px;
+  width: 14px;
 }
 
 .dimmer {
