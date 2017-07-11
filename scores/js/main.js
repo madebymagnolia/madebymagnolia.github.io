@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+	// Setup Page Was variable to help 
+	// with delay of expansion when page switches
+	var pagewas = 0;
+
 	// Templating
 	var template = $('#score').html();
 	var templateScript = Handlebars.compile(template);
@@ -153,6 +157,7 @@ $(document).ready(function() {
 		// console.log('Focus: ' + focusfromtop);
 		// console.log('Page height: ' + pageheight);
 		// console.log('Page: ' + page);
+		// console.log('Page was: ' + pagewas);
 		
 		if (focusfromtop < 601) {
 
@@ -165,6 +170,26 @@ $(document).ready(function() {
 			$('.scrollbar-handle').css('top', + handlepos + 'px');
 
 		}
+
+		if (pagewas == page) {
+
+			var animheight = $('.pane-content-page:visible .score.focus').attr('data-height');
+			$('.score.focus').css('height',animheight).addClass('expanded');
+
+		} else {
+
+			setTimeout(function(){
+				var animheight = $('.pane-content-page:visible .score.focus').attr('data-height');
+				$('.score.focus').css('height',animheight).addClass('expanded');
+			},200)
+
+		}
+
+		// Set pagewas after the animation has occurred
+		setTimeout(function(){
+			pagewas = page;
+		},500);
+
 
 	}
 
@@ -179,7 +204,7 @@ $(document).ready(function() {
 
 			var total = $('ul.nav li').length;
 			var current = parseInt($('ul.nav li.focus').index());
-			console.log(current);
+			// console.log(current);
 
 			// Up
 			if(e.keyCode == 38) {
@@ -272,9 +297,9 @@ $(document).ready(function() {
 					$('.pane-content-page:visible .score.focus').removeClass('focus');
 					$('.pane-content-page:visible .score[data-index="'+ prev + '"]').addClass('focus');
 
-					var animheight = $('.pane-content-page:visible .score.focus').attr('data-height');
+					// var animheight = $('.pane-content-page:visible .score.focus').attr('data-height');
 					$('.score').css('height','50px').removeClass('expanded');
-					$('.score.focus').css('height',animheight).addClass('expanded');
+					// $('.score.focus').css('height',animheight).addClass('expanded');
 
 					nudge();
 
@@ -292,9 +317,9 @@ $(document).ready(function() {
 					$('.pane-content-page:visible .score.focus').removeClass('focus');
 					$('.pane-content-page:visible .score[data-index="'+ next + '"]').addClass('focus');
 
-					var animheight = $('.pane-content-page:visible .score.focus').attr('data-height');
+					// var animheight = $('.pane-content-page:visible .score.focus').attr('data-height');
 					$('.score').css('height','50px').removeClass('expanded');
-					$('.score.focus').css('height',animheight).addClass('expanded');
+					// $('.score.focus').css('height',animheight).addClass('expanded');
 
 					nudge();
 

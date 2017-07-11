@@ -90,7 +90,7 @@
 
   <script id="score" type="text/x-handlebars-template">
     {{#each scores}}
-    <div class="score" data-status="{{status}}">
+    <div class="score" data-status="{{status}}" {{#if note}}data-note="true"{{/if}}>
       <div class="score-elapsed">{{elapsed}}</div>
       <div class="score-title score-title-home">{{team-home}}</div>
       <div class="score-title score-title-away">{{team-away}}</div>
@@ -103,6 +103,7 @@
         <div class="score-scorers score-scorers-away">{{scorers-away}}</div>
       </div>
     </div>
+    {{#if note}}<div class="score-note">{{note}}</div>{{/if}}
     {{/each}}
   </script>
 

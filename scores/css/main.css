@@ -631,6 +631,13 @@ h3 {
   transition: all 0.4s 0.1s;
 }
 
+.score-note {
+  display: block;
+  font-size: 22px;
+  margin: -5px 0 20px 0;
+  text-align: center;
+}
+
 .pane-content-scrollbar {
   bottom: 24px;
   position: absolute;

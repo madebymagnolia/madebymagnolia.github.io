@@ -85,7 +85,8 @@ var epl = {
 	    "team-away": "Chelsea",
 	    "scoreline": "0 - 0",
 	    "scorers-home": "",
-	    "scorers-away": ""
+	    "scorers-away": "",
+	    "note": "Game suspended"
 	  },
 	  {
 	    "status": "live",
