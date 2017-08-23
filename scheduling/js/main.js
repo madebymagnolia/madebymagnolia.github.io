@@ -6,6 +6,24 @@ $(document).ready(function(){
 
 	$('#title').focus();
 
+	var today = new Date();
+
+	var day = today.getDate();
+	var month = today.getMonth()+1;
+	var year = today.getFullYear();
+	var hours = today.getHours();
+	var minutes = today.getMinutes();
+
+	$('#startday,#endday').val(leadingZero(day));
+	$('#startmonth, #endmonth').val(leadingZero(month));
+	$('#startyear, #endyear').val(year);	
+
+	var starttime = leadingZero(hours) + leadingZero(minutes);
+	var endtime = leadingZero(hours) + leadingZero(minutes+1);
+
+	$('#starttime').val(starttime);
+	$('#endtime').val(endtime);
+
 	$('[data-toggle="datepicker-start"]').datepicker({
 		autoHide: true
 	});
