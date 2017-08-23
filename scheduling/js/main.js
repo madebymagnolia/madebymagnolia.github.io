@@ -4,6 +4,8 @@ $(document).ready(function(){
 		return String("00" + n).slice(-2);
 	}
 
+	$('#title').focus();
+
 	$('[data-toggle="datepicker-start"]').datepicker({
 		autoHide: true
 	});
