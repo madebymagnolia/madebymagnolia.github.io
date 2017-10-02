@@ -135,6 +135,6 @@ $(window).on('load',function(){
     $(this).closest('.popover').popover('hide');
   });
 
-  },10);
+  },100);
 
 });
