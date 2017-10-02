@@ -1,5 +1,7 @@
 $(window).on('load',function(){
 
+  setTimeout(function(){
+
     $('[data-toggle="tooltip"]').tooltip()
     $('[data-toggle="popover"]').popover()
 
@@ -132,5 +134,7 @@ $(window).on('load',function(){
   $('body').on('click', 'button.btn-popup-close', function() {
     $(this).closest('.popover').popover('hide');
   });
+
+  },10);
 
 });
