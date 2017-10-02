@@ -1,0 +1,1337 @@
+{
+	"rows": [
+		{
+			"live": true,
+			"date": { "day": "19", "month": "Aug" },
+			"title": "BBC News Channel",
+			"startDate": "20170819",
+			"startTime": "06:00",
+			"endDate": "20170820",
+			"endTime": "06:00 (20/08/2017)",
+			"countdown": 64920,
+			"clearat": 60,
+			"platforms": "DTT, Freesat & Sky",
+			"services": [
+				{
+					"selected": false,
+					"title": "BBC One (All)",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC One London"
+						},
+						{
+							"selected": true,
+							"title": "BBC One HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Scotland"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Scotland HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Wales"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Wales HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Northern Ireland"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Northern Ireland HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "BBC Two (All)",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC One London"
+						},
+						{
+							"selected": true,
+							"title": "BBC One HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Scotland"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Scotland HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Wales"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Wales HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Northern Ireland"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Northern Ireland HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "BBC Four",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC Four"
+						},
+						{
+							"selected": true,
+							"title": "BBC Four HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "CBBC",
+					"channels": [
+						{
+							"selected": true,
+							"title": "CBBC"
+						},
+						{
+							"selected": true,
+							"title": "CBBC HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "CBeebies",
+					"channels": [
+						{
+							"selected": true,
+							"title": "CBeebies"
+						},
+						{
+							"selected": true,
+							"title": "CBeebies HD"
+						}
+					]
+				},
+				{
+					"selected": true,
+					"title": "BBC News (All)",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC News"
+						},
+						{
+							"selected": true,
+							"title": "BBC News HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "BBC Parliament",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC Parliament"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "BBC ALBA",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC ALBA"
+						}
+					]
+				}
+			],
+			"notes": "–"
+		},{
+			"live": true,
+			"date": { "day": "19", "month": "Aug" },
+			"title": "Sounds of the 80s",
+			"trigger": "soundsofthe80s",
+			"startDate": "20170819",
+			"startTime": "06:59",
+			"endDate": "20170819",
+			"endTime": "12:00",
+			"countdown": 120,
+			"clearat": 60,
+			"platforms": "DTT, Freesat & Sky",
+			"services": [
+				{
+					"selected": false,
+					"title": "BBC One (All)",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC One London"
+						},
+						{
+							"selected": true,
+							"title": "BBC One HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Scotland"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Scotland HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Wales"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Wales HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Northern Ireland"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Northern Ireland HD"
+						}
+					]
+				},
+				{
+					"selected": true,
+					"title": "BBC Two (All)",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC Two London"
+						},
+						{
+							"selected": true,
+							"title": "BBC Two HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC Two Scotland"
+						},
+						{
+							"selected": true,
+							"title": "BBC Two Scotland HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC Two Wales"
+						},
+						{
+							"selected": true,
+							"title": "BBC Two Wales HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC Two Northern Ireland"
+						},
+						{
+							"selected": true,
+							"title": "BBC Two Northern Ireland HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "BBC Four",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC Four"
+						},
+						{
+							"selected": true,
+							"title": "BBC Four HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "CBBC",
+					"channels": [
+						{
+							"selected": true,
+							"title": "CBBC"
+						},
+						{
+							"selected": true,
+							"title": "CBBC HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "CBeebies",
+					"channels": [
+						{
+							"selected": true,
+							"title": "CBeebies"
+						},
+						{
+							"selected": true,
+							"title": "CBeebies HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "BBC News (All)",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC News"
+						},
+						{
+							"selected": true,
+							"title": "BBC News HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "BBC Parliament",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC Parliament"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "BBC ALBA",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC ALBA"
+						}
+					]
+				}
+			],
+			"notes": "–"
+		},{
+			"live": false,
+			"date": { "day": "19", "month": "Aug" },
+			"title": "Live Sport",
+			"trigger": "livesport",
+			"startDate": "20170819",
+			"startTime": "12:00",
+			"endDate": "20170819",
+			"endTime": "13:00",
+			"countdown": 120,
+			"clearat": 3600,
+			"platforms": "DTT, Freesat & Sky",
+			"services": [
+				{
+					"selected": true,
+					"title": "BBC One (All)",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC One London"
+						},
+						{
+							"selected": true,
+							"title": "BBC One HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Scotland"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Scotland HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Wales"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Wales HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Northern Ireland"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Northern Ireland HD"
+						}
+					]
+				},
+				{
+					"selected": true,
+					"title": "BBC Two (All)",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC Two London"
+						},
+						{
+							"selected": true,
+							"title": "BBC Two HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC Two Scotland"
+						},
+						{
+							"selected": true,
+							"title": "BBC Two Scotland HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC Two Wales"
+						},
+						{
+							"selected": true,
+							"title": "BBC Two Wales HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC Two Northern Ireland"
+						},
+						{
+							"selected": true,
+							"title": "BBC Two Northern Ireland HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "BBC Four",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC Four"
+						},
+						{
+							"selected": true,
+							"title": "BBC Four HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "CBBC",
+					"channels": [
+						{
+							"selected": true,
+							"title": "CBBC"
+						},
+						{
+							"selected": true,
+							"title": "CBBC HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "CBeebies",
+					"channels": [
+						{
+							"selected": true,
+							"title": "CBeebies"
+						},
+						{
+							"selected": true,
+							"title": "CBeebies HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "BBC News (All)",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC News"
+						},
+						{
+							"selected": true,
+							"title": "BBC News HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "BBC Parliament",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC Parliament"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "BBC ALBA",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC ALBA"
+						}
+					]
+				}
+			],
+			"notes": "–"
+		},{
+			"live": false,
+			"date": { "day": "19", "month": "Aug" },
+			"title": "BBC News",
+			"startDate": "20170819",
+			"startTime": "13:00",
+			"endDate": "20170819",
+			"endTime": "13:15",
+			"countdown": 4620,
+			"clearat": 900,
+			"platforms": "DTT, Freesat & Sky",
+			"services": [
+				{
+					"selected": true,
+					"title": "BBC One (All)",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC One London"
+						},
+						{
+							"selected": true,
+							"title": "BBC One HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Scotland"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Scotland HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Wales"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Wales HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Northern Ireland"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Northern Ireland HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "BBC Two (All)",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC One London"
+						},
+						{
+							"selected": true,
+							"title": "BBC One HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Scotland"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Scotland HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Wales"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Wales HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Northern Ireland"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Northern Ireland HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "BBC Four",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC Four"
+						},
+						{
+							"selected": true,
+							"title": "BBC Four HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "CBBC",
+					"channels": [
+						{
+							"selected": true,
+							"title": "CBBC"
+						},
+						{
+							"selected": true,
+							"title": "CBBC HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "CBeebies",
+					"channels": [
+						{
+							"selected": true,
+							"title": "CBeebies"
+						},
+						{
+							"selected": true,
+							"title": "CBeebies HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "BBC News (All)",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC News"
+						},
+						{
+							"selected": true,
+							"title": "BBC News HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "BBC Parliament",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC Parliament"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "BBC ALBA",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC ALBA"
+						}
+					]
+				}
+			],
+			"notes": "–"
+		},{
+			"live": false,
+			"date": { "day": "19", "month": "Aug" },
+			"title": "Live Sport",
+			"trigger": "livesport",
+			"startDate": "20170819",
+			"startTime": "17:14",
+			"endDate": "20170819",
+			"endTime": "17:15",
+			"countdown": 18960,
+			"clearat": 60,
+			"platforms": "DTT, Freesat & Sky",
+			"services": [
+				{
+					"selected": true,
+					"title": "BBC One (All)",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC One London"
+						},
+						{
+							"selected": true,
+							"title": "BBC One HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Scotland"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Scotland HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Wales"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Wales HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Northern Ireland"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Northern Ireland HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "BBC Two (All)",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC One London"
+						},
+						{
+							"selected": true,
+							"title": "BBC One HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Scotland"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Scotland HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Wales"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Wales HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Northern Ireland"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Northern Ireland HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "BBC Four",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC Four"
+						},
+						{
+							"selected": true,
+							"title": "BBC Four HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "CBBC",
+					"channels": [
+						{
+							"selected": true,
+							"title": "CBBC"
+						},
+						{
+							"selected": true,
+							"title": "CBBC HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "CBeebies",
+					"channels": [
+						{
+							"selected": true,
+							"title": "CBeebies"
+						},
+						{
+							"selected": true,
+							"title": "CBeebies HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "BBC News (All)",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC News"
+						},
+						{
+							"selected": true,
+							"title": "BBC News HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "BBC Parliament",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC Parliament"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "BBC ALBA",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC ALBA"
+						}
+					]
+				}
+			],
+			"notes": "Display over the last minute of Final Score."
+		},{
+			"live": false,
+			"date": { "day": "19", "month": "Aug" },
+			"title": "BBC News",
+			"startDate": "20170819",
+			"startTime": "18:30",
+			"endDate": "20170819",
+			"endTime": "18:45",
+			"countdown": 23520,
+			"clearat": 900,
+			"platforms": "DTT, Freesat & Sky",
+			"services": [
+				{
+					"selected": true,
+					"title": "BBC One (All)",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC One London"
+						},
+						{
+							"selected": true,
+							"title": "BBC One HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Scotland"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Scotland HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Wales"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Wales HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Northern Ireland"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Northern Ireland HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "BBC Two (All)",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC One London"
+						},
+						{
+							"selected": true,
+							"title": "BBC One HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Scotland"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Scotland HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Wales"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Wales HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Northern Ireland"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Northern Ireland HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "BBC Four",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC Four"
+						},
+						{
+							"selected": true,
+							"title": "BBC Four HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "CBBC",
+					"channels": [
+						{
+							"selected": true,
+							"title": "CBBC"
+						},
+						{
+							"selected": true,
+							"title": "CBBC HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "CBeebies",
+					"channels": [
+						{
+							"selected": true,
+							"title": "CBeebies"
+						},
+						{
+							"selected": true,
+							"title": "CBeebies HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "BBC News (All)",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC News"
+						},
+						{
+							"selected": true,
+							"title": "BBC News HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "BBC Parliament",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC Parliament"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "BBC ALBA",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC ALBA"
+						}
+					]
+				}
+			],
+			"notes": "–"
+		},{
+			"live": false,
+			"date": { "day": "19", "month": "Aug" },
+			"title": "BBC News",
+			"startDate": "20170819",
+			"startTime": "22:05",
+			"endDate": "20170819",
+			"endTime": "22:25",
+			"countdown": 36420,
+			"clearat": 3600,
+			"platforms": "DTT, Freesat & Sky",
+			"services": [
+				{
+					"selected": true,
+					"title": "BBC One (All)",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC One London"
+						},
+						{
+							"selected": true,
+							"title": "BBC One HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Scotland"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Scotland HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Wales"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Wales HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Northern Ireland"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Northern Ireland HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "BBC Two (All)",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC One London"
+						},
+						{
+							"selected": true,
+							"title": "BBC One HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Scotland"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Scotland HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Wales"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Wales HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Northern Ireland"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Northern Ireland HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "BBC Four",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC Four"
+						},
+						{
+							"selected": true,
+							"title": "BBC Four HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "CBBC",
+					"channels": [
+						{
+							"selected": true,
+							"title": "CBBC"
+						},
+						{
+							"selected": true,
+							"title": "CBBC HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "CBeebies",
+					"channels": [
+						{
+							"selected": true,
+							"title": "CBeebies"
+						},
+						{
+							"selected": true,
+							"title": "CBeebies HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "BBC News (All)",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC News"
+						},
+						{
+							"selected": true,
+							"title": "BBC News HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "BBC Parliament",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC Parliament"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "BBC ALBA",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC ALBA"
+						}
+					]
+				}
+			],
+			"notes": "–"
+		},{
+			"live": false,
+			"date": { "day": "19", "month": "Aug" },
+			"title": "Sounds of the 80s",
+			"trigger": "soundsofthe80s",
+			"startDate": "20170819",
+			"startTime": "22:59",
+			"endDate": "20170819",
+			"endTime": "23:00",
+			"countdown": 39660,
+			"clearat": 60,
+			"platforms": "DTT, Freesat & Sky",
+			"services": [
+				{
+					"selected": false,
+					"title": "BBC One (All)",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC One London"
+						},
+						{
+							"selected": true,
+							"title": "BBC One HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Scotland"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Scotland HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Wales"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Wales HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Northern Ireland"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Northern Ireland HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "BBC Two (All)",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC One London"
+						},
+						{
+							"selected": true,
+							"title": "BBC One HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Scotland"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Scotland HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Wales"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Wales HD"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Northern Ireland"
+						},
+						{
+							"selected": true,
+							"title": "BBC One Northern Ireland HD"
+						}
+					]
+				},
+				{
+					"selected": true,
+					"title": "BBC Four (All)",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC Four"
+						},
+						{
+							"selected": true,
+							"title": "BBC Four HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "CBBC",
+					"channels": [
+						{
+							"selected": true,
+							"title": "CBBC"
+						},
+						{
+							"selected": true,
+							"title": "CBBC HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "CBeebies",
+					"channels": [
+						{
+							"selected": true,
+							"title": "CBeebies"
+						},
+						{
+							"selected": true,
+							"title": "CBeebies HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "BBC News (All)",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC News"
+						},
+						{
+							"selected": true,
+							"title": "BBC News HD"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "BBC Parliament",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC Parliament"
+						}
+					]
+				},
+				{
+					"selected": false,
+					"title": "BBC ALBA",
+					"channels": [
+						{
+							"selected": true,
+							"title": "BBC ALBA"
+						}
+					]
+				}
+			],
+			"notes": "Trigger over the last minute of 'David Bowie and the Story of Ziggy Stardust' please"
+		}
+	]
+}

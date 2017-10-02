@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CDO</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+  </head>
+  <body>
+
+<!--     <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+
+        <div class="navbar-header">
+          <div class="btn-group">
+            <button type="button" class="btn btn-success dropdown-toggle navbar-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              New Event <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Bridge Link</a></li>
+              <li><a href="#">Trigger</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <form class="navbar-form navbar-right">
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon3">Search</span>
+            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" size="30">
+          </div>
+        </form>
+
+      </div>
+    </nav> -->
+
+    <table class="table scheduleHead">
+      <thead>
+        <tr>
+           <td class="scheduleHead__column--date">Date</td>
+           <td class="scheduleHead__column--deadline">Deadline</td>
+           <td class="scheduleHead__column--event">Event</td>
+           <td class="scheduleHead__column--channels">Platforms & Channels</td>
+           <td class="scheduleHead__column--notes">Notes</td>
+           <td class="scheduleHead__column--action">Action</td>
+        </tr>
+      </thead>
+    </table>
+
+    <div class="scheduleList" id="scheduleList">
+
+      <script id="entry-template" type="text/x-handlebars-template">
+
+        {{#each rows}}
+
+        <div class="scheduleRow {{#if live}}scheduleRow--live{{/if}}" data-countdown="{{countdown}}" data-countdown-clear="{{clearat}}">
+          <div class="scheduleRow__col scheduleRow__col--date">
+            <span class="day">{{date.day}}</span>
+            <span class="month">{{date.month}}</span>
+            <div class="status"></div>
+          </div>
+          <div class="scheduleRow__col scheduleRow__col--deadline">
+            <span class="deadline">00:00:00</span>
+            <span class="due"><span class="verb"></span> at <span class="time">{{#if live}}{{endTime}}{{else}}{{startTime}}{{/if}}</span></span>
+            <span class="status"></span>
+          </div>
+          <div class="scheduleRow__col scheduleRow__col--event">
+            <span class="title">{{title}}</span>
+            <span class="duration">{{startTime}} &rarr; <span class="clear-at">{{endTime}}</span></span>
+            <span class="triggers">
+              {{#if trigger}}<img src="img/{{trigger}}.png" alt="">{{else}}<img src="img/trigger.png" alt="">{{/if}}
+              {{#if trigger}}<img src="img/{{trigger}}.png" alt="">{{else}}<img src="img/trigger.png" alt="">{{/if}}
+              {{#if trigger}}<img src="img/{{trigger}}.bmp" alt="">{{else}}<img src="img/trigger.bmp" alt="">{{/if}}
+            </span>
+          </div>
+          <div class="scheduleRow__col scheduleRow__col--channels">
+            {{#each services}}
+              {{#if selected}}
+                <span data-toggle="popover" data-placement="left" title="{{../platforms}}" data-content="
+                {{#each channels}}{{#if selected}}{{title}}{{else}}<span class='disabled'>{{title}}</span>{{/if}}<br>{{/each}}
+                " data-html="true" data-trigger="hover">{{title}}</span><br>
+              {{/if}}
+            {{else}}
+              &nbsp;
+            {{/each}}    
+          </div>
+          <div class="scheduleRow__col scheduleRow__col--notes">{{notes}}&nbsp;</div>
+          <div class="scheduleRow__col scheduleRow__col--action">
+            <button type="button" class="btn btn-success btn-sm btn-block btn-publish" data-loading-text="Publishing...">Publish Event</button>
+            <button type="button" class="btn btn-danger btn-sm btn-block btn-clear" data-loading-text="Clearing...">Clear Channel(s)</button>
+          </div>
+        </div>
+
+        {{/each}}
+
+      </script>
+
+    </div>
+
+  </body>
+  <script src="vendor.min.js"></script>
+  <script src="./js/handlebars-v4.0.10.js"></script>
+  <script src="./js/jquery.plugin.min.js"></script>
+  <script src="./js/jquery.countdown.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script>
+    
+    $(document).ready(function() {
+
+      var taskNumber = new URLSearchParams(window.location.search).get('task');
+
+      var slingshot = function (url, tplId, anchor) {
+         $.getJSON(url, function(data) {
+                  var template = $(tplId).html();
+                  var stone = Handlebars.compile(template)(data);
+                  $(anchor).append(stone);
+         });
+      }
+
+      slingshot('data/data0' + taskNumber + '.json', '#entry-template', '#scheduleList');
+
+    });
+
+  </script>
+  <script src="./js/main.js"></script>
+</html>

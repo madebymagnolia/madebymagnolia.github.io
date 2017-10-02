@@ -1,0 +1,238 @@
+body {
+  padding-top: 36px;
+}
+
+.scheduleHead {
+  background: #f8f8f8;
+  border-bottom: 1px solid #e7e7e7;
+  font-weight: 700;
+  margin-bottom: 0px;
+  position: fixed;
+  top: 0px;
+  z-index: 9999;
+}
+
+.scheduleHead td {
+  border-color: #e7e7e7 !important;
+  padding: 8px 15px !important;
+}
+
+.scheduleHead__column--date, .scheduleRow__col--date {
+  width: 7%;
+}
+
+.scheduleHead__column--deadline, .scheduleRow__col--deadline {
+  width: 12%;
+}
+
+.scheduleHead__column--event, .scheduleRow__col--event {
+  width: 30%;
+}
+
+.scheduleHead__column--channels, .scheduleRow__col--channels {
+  width: 18%;
+}
+
+.scheduleHead__column--notes, .scheduleRow__col--notes {
+  width: 20%;
+}
+
+.scheduleHead__column--action, .scheduleRow__col--action {
+  width: 13%;
+}
+
+.scheduleRow {
+  border-bottom: 1px solid #ebebeb;
+  display: block;
+  overflow: hidden;
+  padding: 18px 0;
+  transition: all 0.3s;
+}
+
+.scheduleRow .status {
+  border-radius: 2px;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 10px 0 0 0;
+  padding: 1px 4px;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.scheduleRow .popover {
+  z-index: 9999999;
+}
+
+.scheduleRow:last-child {
+  border: none;
+}
+
+.scheduleRow .scheduleRow__col {
+  float: left;
+  padding: 0px 15px;
+}
+
+.scheduleRow .scheduleRow__col.scheduleRow__col--date {
+  line-height: 1.2;
+  padding-left: 19px;
+}
+
+.scheduleRow .scheduleRow__col.scheduleRow__col--date .day {
+  display: block;
+  font-size: 20px;
+}
+
+.scheduleRow .scheduleRow__col.scheduleRow__col--date .month {
+  display: block;
+  opacity: 0.7;
+}
+
+.scheduleRow .scheduleRow__col.scheduleRow__col--deadline {
+  line-height: 1.2;
+}
+
+.scheduleRow .scheduleRow__col.scheduleRow__col--deadline .deadline {
+  display: block;
+  font-size: 20px;
+}
+
+.scheduleRow .scheduleRow__col.scheduleRow__col--deadline .due {
+  display: block;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.scheduleRow .scheduleRow__col.scheduleRow__col--deadline .due .verb:before {
+  content: "Publish";
+}
+
+.scheduleRow .scheduleRow__col.scheduleRow__col--event .title {
+  display: block;
+  font-weight: 700;
+}
+
+.scheduleRow .scheduleRow__col.scheduleRow__col--event .duration {
+  display: block;
+  opacity: .7;
+  margin-top: 1px;
+}
+
+.scheduleRow .scheduleRow__col.scheduleRow__col--event .triggers {
+  display: block;
+  margin-top: 4px;
+}
+
+.scheduleRow .scheduleRow__col.scheduleRow__col--event .triggers img {
+  border: 1px solid #000;
+  height: auto;
+  float: left;
+  margin-right: 1%;
+  max-width: 100px;
+  width: 32%;
+}
+
+.scheduleRow .scheduleRow__col.scheduleRow__col--channels span {
+  cursor: context-menu;
+  display: inline-block;
+}
+
+.scheduleRow .scheduleRow__col.scheduleRow__col--channels span:hover {
+  font-weight: 700;
+}
+
+.scheduleRow .scheduleRow__col.scheduleRow__col--channels .popover {
+  font-weight: 500;
+}
+
+.scheduleRow .scheduleRow__col.scheduleRow__col--channels .popover .disabled {
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.scheduleRow .scheduleRow__col.scheduleRow__col--notes {
+  font-size: 13px;
+}
+
+.scheduleRow .scheduleRow__col.scheduleRow__col--action button {
+  font-weight: 500;
+  margin-top: 3px;
+  text-transform: uppercase;
+}
+
+.scheduleRow .scheduleRow__col.scheduleRow__col--action .btn-clear {
+  display: none;
+}
+
+.scheduleRow.scheduleRow--live .scheduleRow__col--date .status {
+  background: #2866f6;
+  display: inline-block;
+  margin-left: -4px;
+}
+
+.scheduleRow.scheduleRow--live .scheduleRow__col--date .status:before {
+  content: "Live";
+}
+
+.scheduleRow.scheduleRow--live .scheduleRow__col--deadline .due .verb:before {
+  content: "Clear";
+}
+
+.scheduleRow.scheduleRow--live .scheduleRow__col--action .btn-publish {
+  display: none;
+}
+
+.scheduleRow.scheduleRow--live .scheduleRow__col--action .btn-clear {
+  display: block;
+}
+
+.scheduleRow[data-status='imminent'] {
+  background: #F4D5D5;
+}
+
+.scheduleRow[data-status='imminent'] .scheduleRow__col--deadline .status {
+  background: #BF0000;
+}
+
+.scheduleRow[data-status='imminent'] .scheduleRow__col--deadline .status:before {
+  content: "Imminent";
+}
+
+.scheduleRow[data-status='comingup'] {
+  background: #FCF7E3;
+}
+
+.scheduleRow[data-status='comingup'] .scheduleRow__col--deadline .status {
+  background: #F19119;
+}
+
+.scheduleRow[data-status='comingup'] .scheduleRow__col--deadline .status:before {
+  content: "Coming up";
+}
+
+.scheduleRow[data-status='elapsed'] {
+  pointer-events: none;
+}
+
+.scheduleRow[data-status='elapsed'] .scheduleRow__col {
+  filter: grayscale(1);
+  opacity: 0.5;
+}
+
+.scheduleRow[data-status='elapsed'] .scheduleRow__col--action button {
+  display: none;
+}
+
+.scheduleRow[data-status='elapsed'] .scheduleRow__col--deadline .status {
+  display: none;
+}
+
+.scheduleRow[data-status='elapsed'] .scheduleRow__col--deadline .due {
+  display: none;
+}
+
+.scheduleRow[data-status='elapsed'] .scheduleRow__col--date .status {
+  display: none;
+}
